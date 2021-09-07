@@ -12,8 +12,8 @@ public class DemoController {
 	private IUserService userService;
 
 	@RequestMapping("/getUserName")
-	public String getUserName() {
+	public Object getUserName() {
 
-		return userService.getUserName();
+		return userService.getUserName("sssss");
 	}
 }
